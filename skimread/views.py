@@ -14,7 +14,7 @@ def portfoliok(request):
 
 def view_blog(request, title):
     blog_title = title.replace('-',' ')
-    blog = BlogPost.objects.filter(title = blog_title).first()
+    blog = BlogPost.objects.filter(title__iexact = blog_title).first()
     FeaturedBlogs = BlogPost.objects.filter(featured=True)
     return render(request, 'view_blog.html',{'blog': blog,'featureds':FeaturedBlogs});
 
