@@ -1,0 +1,64 @@
+/* CSS Reset */
+
+/* blog-section */
+h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+.content p{
+    text-align: justify;
+    color: black;
+    font-weight: normal;
+}
+p strong{
+    font-size: 24px;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 12px;
+}
+
+/* sidebar-section */
+.sidebar-block{
+    margin-bottom: 2em;
+}
+.sidebar-block .sidebar-tittle{
+    padding: 7px 9px;
+    margin: 0px;
+    font-size: 22px;
+    background: #0d1011;
+    border-radius: 5px 5px 0px 0px;
+    color: #fff;
+}
+.sidebar-block .sidebar-desc{
+    border: 2px solid #0b0b0c;
+    padding: 16px;
+    border-top: none;
+    border-radius: 0px 0px 5px 5px;
+}
+.sidebar-block .sidebar-desc ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-block .sidebar-desc ul li{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0px;
+    border-bottom: 1px solid #eaeaea;
+}
+.sidebar-desc .recent-postlists a:link{
+    text-decoration: none;
+}
+@media all and (max-width: 1201px) {
+    .post-thumbnail img{
+        width: 100%;
+    }
+} 

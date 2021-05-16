@@ -1,0 +1,54 @@
+.getintouch{
+    margin:auto;
+    margin-top: 150px;
+}
+
+/* Buttons */
+.SendMessage{
+    padding: 0%;
+}
+.SendMessage{
+     color: white;
+     font-weight: normal;
+     line-height: 45px;
+     perspective: 1000px;
+}
+.SendMessage{
+    border-width: 0px;
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    padding: 2px 27px;
+    background: #1f1633;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    transform-origin: 50%, 0;
+    transform-style: preserve-3d;
+}
+#floatingemail{
+    font-size: 17px;
+    width: 600px;
+}
+@media screen and (max-width:767px) {
+    #floatingemail{
+        width:400px;
+    }
+}
+@media screen and (max-width:550px){
+    #floatingemail{
+        width:300px;
+    }
+    .getintouch{
+        margin-top: 120px;
+    }
+}
+@media screen and (max-width:400px){
+    #floatingemail{
+        width:200px;
+    }
+    .getintouch{
+        margin-top: 80px;
+    }
+}

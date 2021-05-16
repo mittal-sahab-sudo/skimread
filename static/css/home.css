@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+    font-family: 'Nunito', sans-serif;
+
+}
+/* Typography */
+h1,h2,h3,h4,h5,h6{
+    font-weight: 300;
+}
+h1{
+    font-size: 50px;
+    font-weight: 500px;
+    line-height: 50px;
+}
+h2{
+    font-size: 30px;
+    margin-top: 0;
+    line-height: 40px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 200px;
+    line-height: 32px;
+}
+h4{
+    color: #505050;
+    font-size: 18px;
+    line-height: 28px;
+}
+p{
+    color: #757575;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: .50px;
+}
+/* Menu */
+.navbar .navbar-brand{
+    font-weight: normal;
+    font-size: 25px;
+    color: white;
+    display:block;
+}
+.navbar .navbar-nav .nav-link{
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    transition: all-ease-in 0.4s;
+    color: white;
+}
+.navbar .navbar-nav .nav-link:hover{
+    background: transparent;
+    color: white;
+}
+.navbar .navbar-nav .nav-link::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+.navbar .navbar-nav .nav-link:hover::after{
+    width: 100%;
+    background: #fee937;
+    color: white;
+}
+.navbar .navbar-nav .active{
+    color: #fee937;
+}
+.navbar img{
+    display: block;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+.homeImage{
+    display: block;
+    position:relative;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    height : 100%;
+    width:100%;
+    object-fit: cover;
+    margin-bottom: 0px;
+}
+#blogbox{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    height : 100%;
+    object-fit: cover;
+    border-radius : 10%;
+    margin: auto;
+}
+#blogbox img{
+    border-radius:10%;
+    margin:auto;
+}
+#blogbox a:link{
+    text-decoration: none;
+}
+.plants{
+    margin:auto;
+}
+.intro{
+    margin:auto;
+    display: block;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+.intro h2{
+    text-align: center;
+    margin:auto;
+}
+.carousel img{
+    margin:auto;
+    width:600px;
+    height:400px;
+}
+#tree-caption{
+    top: 0;
+    bottom: auto;
+    
+}
+.page-footer{
+    background-color: #1f1633;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+.page-footer .my-2 a:link{
+    text-decoration: none;
+}
+
+.footer-copyright a:link{
+    text-decoration: none;
+}
+@media screen and (max-width:767px) {
+    .carousel img {
+        width: 100% !important;
+        height: auto !important;
+        left: 0 !important;
+        overflow: hidden;
+    }
+    #blogbox{
+        margin:auto;
+        width: 100% !important;
+        height: auto !important;
+        overflow: hidden;
+    }
+    #blogbox img{
+        margin:auto;
+    }
+    #blogbox h4{
+        margin:auto;
+        font-size: 12px;
+    }
+    #blogbox p{
+        margin:auto;
+        font-size: 10px;
+    }
+    .intro{
+        margin-top:5px;
+    }
+    .intro h2{
+        margin:auto;
+        font-size:20px;
+        line-height: 28px;
+    }
+    #blogbox h4{
+        margin:auto;
+        font-size:20px;
+        line-height: 32px;
+    }
+    #blogbox p{
+        margin:auto;
+        font-size:20px;
+        line-height: 32px;
+    }
+}
+@media screen and (max-width:550px){
+    .intro h2{
+        margin:auto;
+        font-size:17px;
+        line-height: 24px;
+    }
+    .intro{
+        margin-top:20px;
+    }
+    #blogbox h4{
+        margin:auto;
+        font-size:17px;
+        line-height: 28px;
+    }
+    #blogbox p{
+        margin:auto;
+        font-size:17px;
+        line-height: 28px;
+    }
+}
+@media screen and (max-width:440px){
+    .navbar img{
+        width:200px;
+    }
+    .homeImage{
+        margin-top:100px;
+    }
+    .about{
+        margin-top:80px;
+    }
+}
+@media screen and (max-width:340px){
+    .navbar img{
+        width:150px;
+    }
+    .homeImage{
+        margin-top:80px;
+    }
+    .about{
+        margin-top:60px;
+    }
+}
+@media screen and (max-width:290px){
+    .navbar img{
+        width:110px;
+    }
+}

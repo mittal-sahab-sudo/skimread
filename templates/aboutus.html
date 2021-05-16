@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon"href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css'%}">
+    <link rel="stylesheet" href="{% static 'css/home.css'%}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b42b638148.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/trialstyle.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css">
+    <link rel="stylesheet" media="screen and (max-width: 1150px)" href="{% static 'css/phone.css'%}">
+    <link rel="stylesheet" href="{% static 'css/home.css'%}">
+    <link rel="stylesheet" href="{% static 'css/about.css'%}">
+</head>
+<body>
+    
+     <header>
+      <nav class="navbar navbar-expand-lg navbar-dark container-fluid fixed-top" style="background-color : #1f1633;">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'home'%}"><img src="{% static 'images/logo1.jpeg'%}" alt="SkimRead" width="300" style="margin-left : 20px;"></a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-expanded="false" aria-controls="navbarSupportedContent" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto float-right text-right">
+              <li class="nav-item">
+                <a class="nav-link ml-5" aria-current="page" href="{% url 'home'%}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ml-5" href="{% url 'about-us'%}">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ml-5" href="{% url 'contact'%}">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 mt-5 wow fadeInUp">
+            <div class="about">
+            <h2 style="text-align: center;">ABOUT US </h2>
+            <p style="color: black; font-size:20px; font-weight:normal;">
+            SkimRead is a website created and managed by two of us, Archi Agarwal and Abhishek Mittal. SkimRead is a place where we present our thoughts and opinions with which you can relate or find them interesting. 
+            Both of us have been friends from our high school and are fond of reading books, exploring new things and concepts and writing what we feel about it.<br>
+            Archi: I reflect my thoughts and ideas from the books I have read and other interesting topics.
+            Being a book lover, I have gone through a lot of amazing works of many mind-boggling writers. Through SkimRead, I will present the main concepts of all such works that I have read and try to make a good connection with my Readers. I like to explore stuff related to nature and its amazing creations. I also like watching movies and web series in my leisure time so we can always discuss them here too.
+            <br> Abhishek: I firmly believe in putting everyday life on trial and keep learning new things which I come across on daily basis. I have a peer interest in technology and mostly like to explore technical and mathematical stuff and keep learning to build something new. SkimRead is one such creation that happens to be a result of this interest. I like to write content based on what I have experienced in life and understood about it. I like to play cricket and chess that is another area to which we can relate.
+            <br>Being from different fields in our interests and skills, we together are a great combination of Technology and Humanities.
+            <br>Please feel free to present your views on SkimRead in the Contact section. 
+            </p>
+        </div>
+        </div>
+        </div>
+    </div>
+    <br>
+    <!-- Team section -->
+    <br>
+        <!-- footer section begin -->
+    <footer class="page-footer pt-2" style="color: white; bottom:0;">
+        <div class="container text-center text-md-left mt-5">
+            <div class="row">
+                <div class="col-md-3 mx-auto mb-4">
+                    <a class="navbar-brand" href="{% url 'home'%}"><img src="{% static 'images/logo1.jpeg'%}" alt="SkimRead" width="200"></a>
+                    <p class="mt-2" style="color:white;">Can't find time to read ? Just SkimRead.</p>
+                </div>
+                <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="font-weight-bold ">Links</h6>
+                    <hr class="bg-info mb-4 mt-0 d-inline-block mx-auto" style="width: 40px; height: 2px;">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="{% url 'home'%}">Home</a></li>
+                        <li class="my-2"><a href="{% url 'about-us'%}">About Us</a></li>
+                        <li class="my-2"><a href="{% url 'contact'%}">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="font-weight-bold ">Quick Links</h6>
+                    <hr class="bg-info mb-4 mt-0 d-inline-block mx-auto" style="width: 90px; height: 2px;">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="{% url 'home'%}">Home</a></li>
+                        <li class="my-2"><a href="{% url 'about-us'%}">About Us</a></li>
+                        <li class="my-2"><a href="{% url 'contact'%}">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mx-auto mb-4">
+                    <h6 class="font-weight-bold ">Connect With Us</h6>
+                    <hr class="bg-info mb-4 mt-0 d-inline-block mx-auto" style="width: 140px; height: 2px;">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><i class="fas fa-home mr-3"></i> Ajmer</li>
+                        <li class="my-2"><i class="fas fa-phone mr-3"></i> 9784790323</li>
+                        <li class="my-2" ><i class="fas fa-envelope mr-3"></i> abhishekmittal323@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-1">
+            <p style="color:white;"> Designed by- Abhishek Mittal
+            </p>
+        </div>
+    </footer>
+    <!-- Footer Section end -->
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
