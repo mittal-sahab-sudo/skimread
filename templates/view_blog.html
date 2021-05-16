@@ -54,7 +54,11 @@
                 <h3 style="text-align:center;">{{blog.excerpt}}</h3>
                 <br>
                 <div class="post-thumbnail">
-                    <img src="/media/{{blog.thumbnail}}"alt="" height="100%" width="100%">
+                    {% if blog.thumbnail%}
+                    <img src="/media/{{blog.thumbnail}}"alt="No blog matching your search." height="100%" width="100%">
+                    {% else %}
+                    <img src="{% static 'images/error404.png'%}"alt="No blog matching your search." height="100%" width="100%">
+                    {% endif %}
                 </div>
                 <br>
                 <br>
