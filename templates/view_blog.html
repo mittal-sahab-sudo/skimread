@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css">
     <link rel="stylesheet" media="screen and (max-width: 1150px)" href="{% static 'css/phone.css'%}">
     <link rel="stylesheet" href="{% static 'css/home.css'%}">
+    <script data-ad-client="ca-pub-3728277699405150" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scri
     <link rel="stylesheet" href="{% static 'css/viewblog.css'%}">
     <title>SkimRead</title>
 </head>
@@ -55,7 +56,7 @@
                 <h3 style="text-align:center;">{{blog.excerpt}}</h3>
                 <br>
                 <div class="post-thumbnail">
-                    {% if blog.thumbnail%}
+                    {% if blog.thumbnail %}
                     <img src="/media/{{blog.thumbnail}}"alt="No blog matching your search." height="100%" width="100%">
                     {% else %}
                     <img src="{% static 'images/error404.png'%}"alt="No blog matching your search." height="100%" width="100%">
