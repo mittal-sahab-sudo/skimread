@@ -148,7 +148,15 @@ p{
 .footer-copyright a:link{
     text-decoration: none;
 }
+@media screen and (max-width:1250px) {
+    .navbar img{
+        width:300px;
+    }
+}
 @media screen and (max-width:767px) {
+    .navbar img{
+        width:250px;
+    }
     .carousel img {
         width: 100% !important;
         height: auto !important;
@@ -192,6 +200,9 @@ p{
     }
 }
 @media screen and (max-width:550px){
+    .navbar img{
+        width:200px;
+    }
     .intro h2{
         margin:auto;
         font-size:17px;
