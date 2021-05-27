@@ -111,8 +111,8 @@
                       <a href="{% url 'view_blog' blog.title|slugify %}">
                       <img class="card-img-top" src="/media/{{blog.thumbnail}}" alt="Card image" id="thumbnail">
                       <div class="card-body">
-                          <h4 class="card-title" style="text-align:center; font-family:Calibri; color:black;">{{ blog.title }}</h4>
-                          <p class="card-text" style="text-align:center; font-family:Calibri; color:black;">- by {{ blog.writer }}</p>
+                          <h3 class="card-title" style="text-align:center; font-weight:bold; font-family:Calibri; color:black;">{{ blog.title }}</h3>
+                          <p class="card-text" style="text-align:center; font-weight:bold; font-family:Calibri; color : #1f1633;">- by {{ blog.writer }}</p>
                           <p class="card-text" style="text-align:center; font-family:Calibri;  color:black;">{{ blog.excerpt }}</p>
                           <!--<a class="btn btn-info" href = "{% url 'view_blog' blog.title|slugify %}">Read more</a>-->
                       </div>
@@ -140,7 +140,7 @@
                         <li class="my-2"><a href="{% url 'contact'%}">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2 mx-auto mb-4">
+                <!--<div class="col-md-2 mx-auto mb-4">
                     <h6 class="font-weight-bold ">Quick Links</h6>
                     <hr class="bg-info mb-4 mt-0 d-inline-block mx-auto" style="width: 90px; height: 2px;">
                     <ul class="list-unstyled">
@@ -148,7 +148,7 @@
                         <li class="my-2"><a href="{% url 'about-us'%}">About Us</a></li>
                         <li class="my-2"><a href="{% url 'contact'%}">Contact</a></li>
                     </ul>
-                </div>
+                </div>-->
                 <div class="col-md-3 mx-auto mb-4">
                     <h6 class="font-weight-bold ">Connect With Us</h6>
                     <hr class="bg-info mb-4 mt-0 d-inline-block mx-auto" style="width: 140px; height: 2px;">
