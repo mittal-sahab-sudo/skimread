@@ -16,7 +16,8 @@ class BlogPost(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('view_blog', args=[str(self.title)])
+        title1 = (self.title).replace(' ','-')
+        return reverse('view_blog', args=[str(title1)])
 
 class Inquiry(models.Model):
     name = models.CharField( max_length=50)
