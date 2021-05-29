@@ -141,12 +141,16 @@ p{
     margin:0;
     padding:0;
 }
-.page-footer .my-2 a:link{
+.page-footer .my-2 a{
     text-decoration: none;
+    color:white;
 }
-
+.page-footer li{
+    color:white;
+}
 .footer-copyright a:link{
-    text-decoration: none;
+	color: white;    
+	text-decoration: none;
 }
 @media screen and (max-width:1250px) {
     .navbar img{
@@ -172,14 +176,6 @@ p{
     #blogbox img{
         margin:auto;
     }
-    #blogbox h4{
-        margin:auto;
-        font-size: 12px;
-    }
-    #blogbox p{
-        margin:auto;
-        font-size: 10px;
-    }
     .intro{
         margin-top:5px;
     }
@@ -187,16 +183,6 @@ p{
         margin:auto;
         font-size:20px;
         line-height: 28px;
-    }
-    #blogbox h4{
-        margin:auto;
-        font-size:20px;
-        line-height: 32px;
-    }
-    #blogbox p{
-        margin:auto;
-        font-size:20px;
-        line-height: 32px;
     }
 }
 @media screen and (max-width:550px){

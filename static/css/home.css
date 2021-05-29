@@ -149,7 +149,8 @@ p{
     color:white;
 }
 .footer-copyright a:link{
-    text-decoration: none;
+	color: white;    
+	text-decoration: none;
 }
 @media screen and (max-width:1250px) {
     .navbar img{
