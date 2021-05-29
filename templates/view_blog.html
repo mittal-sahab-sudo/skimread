@@ -1,50 +1,15 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon"href="{% static 'favicon.ico' %}">
-    <link rel="stylesheet" href="{% static 'css/viewblog.css'%}">
-    <link rel="stylesheet" href="{% static 'css/home.css'%}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/b42b638148.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css">
-    <link rel="stylesheet" media="screen and (max-width: 1150px)" href="{% static 'css/phone.css'%}">
-    <link rel="stylesheet" href="{% static 'css/home.css'%}">
-    <script data-ad-client="ca-pub-3728277699405150" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <link rel="stylesheet" href="{% static 'css/viewblog.css'%}">
-    <title>SkimRead</title>
-</head>
-<body>
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/viewblog.css'%}">    
+{% endblock %}
+
+{% block title %}
+  <title> SkimRead-Blog</title>
+{% endblock %}
     
-     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark container-fluid fixed-top" style="background-color : #1f1633;">
-        <div class="container">
-          <a class="navbar-brand" href="{% url 'home'%}"><img src="{% static 'images/logo1.jpeg'%}" alt="SkimRead" width="300" style="margin-left : 20px;"></a>
-          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-expanded="false" aria-controls="navbarSupportedContent" >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto float-right text-right">
-              <li class="nav-item">
-                <a class="nav-link ml-5" aria-current="page" href="{% url 'home'%}">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ml-5" href="{% url 'about-us'%}">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ml-5" href="{% url 'contact'%}">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+{% block content %}
     
         <!-- Blog Section  -->
     <div class="container my-5 pt-5">
@@ -89,48 +54,4 @@
             </div>
         </div>
     </div>
-
-        <!-- footer section begin -->
-    <footer class="page-footer pt-2" style=" color: white; bottom:0;">
-        <div class="container text-center text-md-left mt-5">
-            <div class="row">
-                <div class="col-md-3 mx-auto mb-4">
-                    <a class="navbar-brand" href="{% url 'home'%}"><img src="{% static 'images/logo1.jpeg'%}" alt="SkimRead" width="200"></a>
-                    <p class="mt-2" style="color:white;">Can't find time to read ? Just SkimRead.</p>
-                </div>
-                <div class="col-md-2 mx-auto mb-4">
-                    <h6 class="font-weight-bold ">Links</h6>
-                    <hr class="bg-info mb-4 mt-0 d-inline-block mx-auto" style="width: 40px; height: 2px;">
-                    <ul class="list-unstyled">
-                        <li class="my-2"><a href="{% url 'home'%}">Home</a></li>
-                        <li class="my-2"><a href="{% url 'about-us'%}">About Us</a></li>
-                        <li class="my-2"><a href="{% url 'contact'%}">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mx-auto mb-4">
-                    <h6 class="font-weight-bold ">Connect With Us</h6>
-                    <hr class="bg-info mb-4 mt-0 d-inline-block mx-auto" style="width: 140px; height: 2px;">
-                    <ul class="list-unstyled">
-                        <li class="my-2"><i class="fas fa-home mr-3"></i> Ajmer</li>
-                        <li class="my-2"><i class="fas fa-phone mr-3"></i> 9784790323</li>
-                        <li class="my-2" ><i class="fas fa-envelope mr-3"></i> abhishekmittal323@gmail.com</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright text-center py-1">
-            <p style="color:white;"> Designed by- Abhishek Mittal
-            </p>
-        </div>
-    </footer>
-    <!-- Footer Section end -->
-</body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</html>
+{% endblock %}
