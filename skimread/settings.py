@@ -42,7 +42,10 @@ INSTALLED_APPS = [
     'corsheaders',
     'django_summernote',
     'blog',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
 ]
+SITE_ID = 1
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',

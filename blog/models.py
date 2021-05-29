@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime
 from django.template.defaultfilters import slugify
+from django.urls import reverse
 
 class BlogPost(models.Model):
     title = models.CharField( max_length=50)
@@ -13,6 +14,9 @@ class BlogPost(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('view_blog', args=[str(self.title)])
 
 class Inquiry(models.Model):
     name = models.CharField( max_length=50)
