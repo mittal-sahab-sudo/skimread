@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
 {% load static %}
-
+ {% block metatags %}
+  <meta name="description" content="About the creators of SkimRead.">
+  <meta name="keywords" content="About SkimRead">
+  <meta name="author" content="Abhishek Mittal">
+{% endblock %}
 {% block link %}
     <link rel="stylesheet" href="{% static 'css/about.css'%}">    
 {% endblock %}
 
 {% block title %}
-  <title> SkimRead-About us</title>
+  <title> About Us -SkimRead</title>
 {% endblock %}
 
 {% block content %}

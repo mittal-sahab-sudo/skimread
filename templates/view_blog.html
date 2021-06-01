@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
 {% load static %}
-
+ {% block metatags %}
+  <meta name="description" content="{{ blog.metadescription }}">
+  <meta name="keywords" content="{{ blog.metakeywords }}">
+  <meta name="author" content="Abhishek Mittal">
+{% endblock %}
 {% block link %}
     <link rel="stylesheet" href="{% static 'css/viewblog.css'%}">    
 {% endblock %}
 
 {% block title %}
-  <title> SkimRead-Blog</title>
+  <title>{{ blog.title }}</title>
 {% endblock %}
     
 {% block content %}

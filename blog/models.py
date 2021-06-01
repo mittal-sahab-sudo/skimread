@@ -11,7 +11,8 @@ class BlogPost(models.Model):
     content = models.TextField()
     featured = models.BooleanField(default = False)
     date_created = models.DateTimeField( default=datetime.now, blank=True)
-
+    metadescription = models.CharField( max_length=300, blank=True)
+    metakeywords = models.CharField( max_length=300, blank=True)
     def __str__(self):
         return self.title
 

@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
 {% load static %}
-
+ {% block metatags %}
+  <meta name="description" content="You can write to us about your Review about SkimRead or if you want blogs on any particular topic.">
+  <meta name="keywords" content="skimread, contact, community">
+  <meta name="author" content="Abhishek Mittal">
+{% endblock %}
 {% block link %}
     <link rel="stylesheet" href="{% static 'css/contact.css'%}">    
 {% endblock %}
 
 {% block title %}
-  <title> SkimRead-Contact</title>
+  <title> Contact -SkimRead</title>
 {% endblock %}
 
 {% block abovenav%}
